@@ -1,0 +1,11 @@
+<div>
+  <h1>Reactive Form Example</h1>
+  <input placeholder="Secret..." [formControl]="secret" />
+  <div [hidden]="secret.valid">
+    {{ secret.errors | json }}
+  </div>
+  <div [hidden]="!secret.valid">
+    Good Job!
+  </div>
+  <button (click)="fillInValidInput()">The Secret!</button>
+</div>

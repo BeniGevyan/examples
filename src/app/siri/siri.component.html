@@ -1,0 +1,9 @@
+<div>
+  <h1>Siri Example</h1>
+  <input [(ngModel)]="message" placeholder="Say Something..." />
+  <div [ngSwitch]="message">
+    <p *ngSwitchCase="'hello'">Good Morning!</p>
+    <p *ngSwitchCase="'goodbye'">Adios!</p>
+    <p *ngSwitchDefault>I'm sorry, I don't understand what you mean</p>
+  </div>
+</div>

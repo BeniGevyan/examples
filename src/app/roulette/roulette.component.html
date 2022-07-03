@@ -1,0 +1,10 @@
+<div>
+  <h1>NgSwitch Example</h1>
+  <button (click)="roll()">ROLL</button>
+  <p>{{ result }}</p>
+  <div [ngSwitch]="result">
+    <div *ngSwitchCase="1">Rats! No luck!</div>
+    <div *ngSwitchCase="6">Lucky you!</div>
+    <div *ngSwitchDefault>Nothing interesting...</div>
+  </div>
+</div>
